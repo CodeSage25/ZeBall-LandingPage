@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+/* ============================================
+   THÈME CUSTOM ZeBall — Tailwind CSS v4
+   ============================================ */
+@theme {
+  --color-primary: #f5c518;
+  --color-primary-light: #fef9e7;
+  --color-secondary: #1a1a2e;
+  --color-danger: #e63946;
+  --color-danger-light: #fdecea;
+  --color-gray-section: #f8f9fb;
+  --color-gray-text: #6b7280;
+  --color-gray-border: #e5e7eb;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+  --animate-pulse-slow: pulse-slow 2s ease-in-out infinite;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* ============================================
+   STYLES DE BASE
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter);
+  color: #1a1a2e;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+  font-weight: 700;
+}
+
+/* ============================================
+   RESPONSIVE POLISH
+   ============================================ */
+
+/* Empêcher le débordement horizontal sur mobile */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Scrollbar custom (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f9fb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Sélection de texte */
+/* ::selection {
+  background-color: #f5c518;
+  color: #1a1a2e;
+} */
+
+/* Focus visible pour accessibilité */
+*:focus-visible {
+  outline: 2px solid #f5c518;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Liens smooth */
+a {
+  transition: color 0.2s ease;
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Iframe responsive */
+iframe {
+  max-width: 100%;
+}
