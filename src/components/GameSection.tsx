@@ -29,7 +29,7 @@ const features = [
     icon: Gamepad2,
     title: "8 numéros + 1 boule jaune",
     description:
-      "La roue contient 8 boules numérotées et une boule spéciale jaune.",
+      "La roue contient 8 cases numérotées et une couleur spéciale jaune.",
   },
   {
     icon: Coins,

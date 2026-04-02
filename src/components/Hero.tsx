@@ -24,7 +24,7 @@ export default function Hero() {
             {/* Badge */}
             <div className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold bg-[#22c55e]/10 text-[#1a1a2e] border border-[#165B38]/30 mb-6">
               <Timer className="w-4 h-4 text-[#22c55e]" />
-              <span> Tirage toutes les 20 secondes</span>
+              <span> Tirage toutes les 30 secondes</span>
             </div>
 
             {/* Titre */}
@@ -59,14 +59,17 @@ export default function Hero() {
               style={{ fontFamily: "var(--font-poppins)" }}
             >
               Misez et
-              <span className="text-[#165B38]"> Gagnez jusqu&apos;à x8.</span>
+              <span className="text-[#165B38]">
+                {" "}
+                Gagnez jusqu&apos;à 8 fois la mise.
+              </span>
             </h1>
 
             {/* Sous-titre */}
             <p className="mt-4 text-lg md:text-xl text-[#6b7280] max-w-lg leading-relaxed">
               Le jeu de tirage le plus rapide du Cameroun. Un nouveau tirage
               toutes les{" "}
-              <span className="font-semibold text-[#1a1a2e]">20 secondes</span>.
+              <span className="font-semibold text-[#1a1a2e]">30 secondes</span>.
               Choisissez votre numéro et tentez votre chance !
             </p>
 
@@ -75,7 +78,7 @@ export default function Hero() {
               <div className="flex items-center gap-2 bg-[#22c55e]/10 rounded-full px-4 py-2.5 border border-[#22c55e]/20">
                 <Zap className="w-4 h-4 text-[#165B38]" />
                 <span className="text-sm font-semibold text-[#1a1a2e]">
-                  Gains x8
+                  Mise x8
                 </span>
               </div>
               <div className="flex items-center gap-2 bg-[#22c55e]/10 rounded-full px-4 py-2.5 border border-[#22c55e]/20">
@@ -87,7 +90,7 @@ export default function Hero() {
               <div className="flex items-center gap-2 bg-[#22c55e]/10 rounded-full px-4 py-2.5 border border-[#22c55e]/20">
                 <Timer className="w-4 h-4 text-[#165B38]" />
                 <span className="text-sm font-semibold text-[#1a1a2e]">
-                  20s / tirage
+                  30s / tirage
                 </span>
               </div>
             </div>
@@ -127,36 +130,36 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="relative flex justify-center"
           >
-            <div className="relative w-full max-w-xl lg:max-w-2xl">
-              {/* Fond décoratif derrière l'image */}
-              <div className="absolute inset-0 bg-[#22c55e]/10 rounded-3xl rotate-2 scale-105" />
+            <div className="relative w-full max-w-[280px] sm:max-w-[300px] lg:max-w-[320px]">
+              {/* Fond décoratif */}
+              <div className="absolute inset-0 bg-[#22c55e]/10 rounded-[3rem] rotate-2 scale-105" />
 
-              {/* Card contenant l'image */}
-              <div className="relative bg-white rounded-2xl shadow-2xl border border-[#e5e7eb] overflow-hidden">
-                {/* Header de la card */}
-                <div className="bg-[#1a1a2e] px-5 py-3 flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 rounded-full bg-[#e63946]" />
-                    <div className="w-3 h-3 rounded-full bg-[#22c55e]" />
-                    <div className="w-3 h-3 rounded-full bg-[#22c55e]/50" />
-                  </div>
-                  <span className="text-white/60 text-xs">iziloto.cm</span>
+              {/* Cadre téléphone */}
+              <div className="relative bg-[#1a1a2e] rounded-[2.5rem] p-3 shadow-2xl border border-white/10">
+                {/* Encoche du téléphone */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-[#1a1a2e] rounded-b-2xl z-10 flex items-center justify-center">
+                  <div className="w-12 h-3 bg-black rounded-full" />
                 </div>
 
-                {/* Image du jeu — GRANDE */}
-                <div className="relative w-full">
+                {/* Écran */}
+                <div className="relative rounded-[2rem] overflow-hidden bg-black">
                   <Image
-                    src="/zeballjeu.png"
+                    src="/izilotoMobile.webp"
                     alt="ZeBall — Aperçu du jeu de tirage rapide sur IziLoto"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto object-cover"
+                    width={320}
+                    height={550}
+                    className="w-full h-auto"
                     priority
                   />
                 </div>
+
+                {/* Barre du bas */}
+                <div className="flex justify-center mt-2">
+                  <div className="w-24 h-1 bg-white/20 rounded-full" />
+                </div>
               </div>
 
-              {/* Badge flottant 20s */}
+              {/* Badge flottant 30s */}
               <motion.div
                 animate={{ y: [0, 8, 0] }}
                 transition={{
@@ -170,7 +173,7 @@ export default function Hero() {
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
                 <Timer className="w-4 h-4 text-[#165B38]" />
-                20s
+                30s
               </motion.div>
             </div>
           </motion.div>
