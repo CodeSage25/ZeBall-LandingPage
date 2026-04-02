@@ -171,7 +171,6 @@ export default function GameSection() {
             </motion.div>
           </motion.div>
 
-          {/* COLONNE DROITE — Tableau de jeu interactif */}
           {/* COLONNE DROITE — Tableau de mise ZeBall */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}

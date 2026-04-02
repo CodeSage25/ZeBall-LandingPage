@@ -54,7 +54,7 @@ export default function Footer() {
 
             <p className="text-white/60 text-sm leading-relaxed max-w-sm mb-6">
               ZeBall est un jeu de tirage rapide disponible sur IziLoto.cm. Un
-              tirage toutes les 20 secondes avec des gains jusqu&apos;à x8 votre
+              tirage toutes les 30 secondes avec des gains jusqu&apos;à x8 votre
               mise. Rejoignez l&apos;aventure !
             </p>
 
