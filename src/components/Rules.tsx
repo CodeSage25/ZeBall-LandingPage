@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { CheckCircle2, AlertTriangle, Star, XCircle, Info } from "lucide-react";
 
 const generalRules = [
-  "La roue contient 8 numéros (1 à 8) et 1 boule jaune spéciale.",
+  "La roue contient 8 boules (1 à 8) et 1 boule jaune spéciale.",
   "Un tirage a lieu toutes les 20 secondes automatiquement.",
   "Vous pouvez placer plusieurs mises sur différentes cases en même temps.",
   "Les gains sont crédités instantanément après chaque tirage.",
@@ -50,7 +50,27 @@ export default function Rules() {
             Règles du <span className="text-[#175A38]">jeu</span>
           </h2>
           <p className="text-base md:text-lg text-[#6b7280] text-center max-w-2xl mx-auto mt-4">
-            Tout ce que vous devez savoir avant de jouer à ZeBall.
+            Tout ce que vous devez savoir avant de jouer à{" "}
+            <span
+              className="font-bold text-xl"
+              style={{ fontFamily: "var(--font-poppins)" }}
+            >
+              <span
+                style={{
+                  color: "black",
+                }}
+              >
+                Ze
+              </span>
+              <span
+                style={{
+                  color: "red",
+                }}
+              >
+                Ball
+              </span>
+            </span>
+            .
           </p>
         </motion.div>
 
@@ -155,7 +175,7 @@ export default function Rules() {
                   className="font-bold text-[#1a1a2e] text-lg"
                   style={{ fontFamily: "var(--font-poppins)" }}
                 >
-                  ❌ Paris incompatibles
+                  Paris incompatibles
                 </h3>
               </div>
 

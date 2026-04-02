@@ -73,7 +73,7 @@ export default function Header() {
 
           <div className="hidden md:block">
             <a
-              href="https://iziloto.cm/"
+              href="https://iziloto.cm/casino/games/dyce-games-zeball"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center

@@ -32,8 +32,8 @@ export default function ScrollToTop() {
                      w-12 h-12 rounded-full
                      bg-[#175A38] text-[#1a1a2e]
                      flex items-center justify-center
-                     shadow-lg shadow-[#f5c518]/30
-                     hover:bg-green-400 hover:shadow-xl
+                   
+                    
                      transition-all duration-300"
           aria-label="Retour en haut"
         >

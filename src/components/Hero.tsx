@@ -58,8 +58,8 @@ export default function Hero() {
               className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a2e] leading-tight max-w-xl"
               style={{ fontFamily: "var(--font-poppins)" }}
             >
-              Misez !
-              <span className="text-[#165B38]">Gagnez jusqu&apos;à x8.</span>
+              Misez et
+              <span className="text-[#165B38]"> Gagnez jusqu&apos;à x8.</span>
             </h1>
 
             {/* Sous-titre */}
@@ -95,18 +95,18 @@ export default function Hero() {
             {/* CTA */}
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-10">
               <a
-                href="https://iziloto.cm/"
+                href="https://iziloto.cm/casino/games/dyce-games-zeball"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center
                            bg-[#165B38] text-white font-bold
                            px-8 py-4 rounded-full text-lg
                            hover:bg-[#165B38]
-                           shadow-lg shadow-[#22c55e]/30
+                          
                            transition-all duration-300"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
-                🎮 Jouer maintenant
+                Jouer maintenant
                 <ArrowRight className="w-5 h-5 ml-2" />
               </a>
               <a
@@ -132,7 +132,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-[#22c55e]/10 rounded-3xl rotate-2 scale-105" />
 
               {/* Card contenant l'image */}
-              <div className="relative bg-white rounded-3xl shadow-2xl border border-[#e5e7eb] overflow-hidden">
+              <div className="relative bg-white rounded-2xl shadow-2xl border border-[#e5e7eb] overflow-hidden">
                 {/* Header de la card */}
                 <div className="bg-[#1a1a2e] px-5 py-3 flex items-center justify-between">
                   <div className="flex items-center gap-2">
@@ -153,9 +153,6 @@ export default function Hero() {
                     className="w-full h-auto object-cover"
                     priority
                   />
-
-                  {/* Overlay gradient en bas pour fondu */}
-                  <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white/80 to-transparent" />
                 </div>
               </div>
 

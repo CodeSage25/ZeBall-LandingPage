@@ -19,7 +19,7 @@ const inter = Inter({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#f5c518",
+  themeColor: "#22c55e",
 };
 
 export const metadata: Metadata = {
@@ -39,11 +39,13 @@ export const metadata: Metadata = {
     "roulette",
   ],
   authors: [{ name: "IziLoto" }],
-  // ===========================
-  // 🖼️ FAVICON SVG
-  // ===========================
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      {
+        url: "/favicon.svg",
+        type: "image/svg+xml",
+      },
+    ],
   },
   creator: "IziLoto",
   publisher: "IziLoto",

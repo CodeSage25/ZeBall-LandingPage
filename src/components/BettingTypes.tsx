@@ -22,7 +22,7 @@ const bets = [
   },
   {
     type: "Boule Jaune ",
-    description: "Misez sur la boule spéciale jaune. Rare mais très rentable !",
+    description: "Misez sur la boule spéciale jaune.",
     winning: "La boule jaune sort",
     cote: "x8",
     miseMin: "10 FCFA",

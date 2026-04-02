@@ -29,7 +29,7 @@ const features = [
     icon: Gamepad2,
     title: "8 numéros + 1 boule jaune",
     description:
-      "La roue contient 8 cases numérotées et une boule spéciale jaune.",
+      "La roue contient 8 boules numérotées et une boule spéciale jaune.",
   },
   {
     icon: Coins,
@@ -41,7 +41,7 @@ const features = [
     icon: Target,
     title: "Plusieurs types de paris",
     description:
-      "Numéro plein, couleur, pair/impair, over/under — à vous de choisir votre stratégie.",
+      "Numéro plein, couleur, pair/impair, over/under — à vous de choisir votre choix.",
   },
   {
     icon: Clock,
@@ -81,7 +81,28 @@ export default function GameSection() {
             style={{ fontFamily: "var(--font-poppins)" }}
           >
             Plongez dans l'univers{" "}
-            <span className="text-[#165B38]">ZeBall</span>
+            <span
+              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight"
+              style={{
+                fontFamily: "var(--font-poppins)",
+                color: "#1a1a2e",
+                WebkitTextStroke: "2px white",
+                paintOrder: "stroke fill",
+              }}
+            >
+              Ze
+            </span>
+            <span
+              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight"
+              style={{
+                fontFamily: "var(--font-poppins)",
+                color: "#e63946",
+                WebkitTextStroke: "2px white",
+                paintOrder: "stroke fill",
+              }}
+            >
+              Ball
+            </span>
           </h2>
           <p className="text-base md:text-lg text-[#6b7280] max-w-2xl mx-auto mt-4">
             Découvrez le fonctionnement de ZeBall et lancez votre première
@@ -138,8 +159,8 @@ export default function GameSection() {
                 className="inline-flex items-center justify-center
                            bg-[#165B38] text-white font-bold
                            px-8 py-4 rounded-full text-base
-                           hover:bg-[#16a34a] hover:shadow-lg
-                           shadow-lg shadow-[#22c55e]/30
+                         
+                           
                            transition-all duration-300"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >
@@ -157,7 +178,7 @@ export default function GameSection() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <div className="bg-[#003d1e] rounded-3xl shadow-2xl border border-white/10 overflow-hidden">
+            <div className="bg-[#003d1e]  shadow-2xl border border-white/10 overflow-hidden">
               {/* Header */}
               <div className="bg-[#1a1a2e] px-6 py-4 flex items-center justify-between">
                 <h3
@@ -397,22 +418,6 @@ export default function GameSection() {
                     </tr>
                   </tbody>
                 </table>
-
-                {/* Bouton jouer sous le tableau */}
-                <a
-                  href="https://iziloto.cm/casino/games/dyce-games-zeball"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 w-full mt-4
-                             bg-[#22c55e] text-white font-bold
-                             py-3.5 rounded-xl text-sm md:text-base
-                             hover:bg-[#16a34a] transition-all duration-300
-                             shadow-md hover:shadow-lg"
-                  style={{ fontFamily: "var(--font-poppins)" }}
-                >
-                  Jouer maintenant sur IziLoto
-                  <ArrowRight className="w-5 h-5" />
-                </a>
               </div>
             </div>
           </motion.div>
@@ -430,7 +435,7 @@ export default function GameSection() {
               className="text-2xl md:text-3xl font-bold text-[#1a1a2e]"
               style={{ fontFamily: "var(--font-poppins)" }}
             >
-              Choisissez votre <span className="text-[#22c55e]">jeton</span>
+              Choisissez votre <span className="text-[#175A38]">jeton</span>
             </h3>
             <p className="text-[#6b7280] text-base mt-2">
               Des mises accessibles de 10 à 10 000 FCFA pour tous les joueurs.
@@ -455,8 +460,8 @@ export default function GameSection() {
                 {/* Image du jeton */}
                 <div
                   className="relative w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24
-                                group-hover:scale-110 transition-transform duration-300
-                                drop-shadow-lg group-hover:drop-shadow-2xl"
+                               
+                               "
                 >
                   <Image
                     src={`/${jeton.file}`}

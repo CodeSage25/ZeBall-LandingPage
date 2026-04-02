@@ -74,7 +74,27 @@ export default function HowToPlay() {
             Comment <span className="text-[#175A38]">jouer</span> ?
           </h2>
           <p className="text-base md:text-lg text-[#6b7280] text-center max-w-2xl mx-auto mt-4">
-            5 étapes simples pour commencer à jouer et gagner sur ZeBall.
+            5 étapes simples pour commencer à jouer et gagner sur{" "}
+            <span
+              className="font-bold text-xl"
+              style={{ fontFamily: "var(--font-poppins)" }}
+            >
+              <span
+                style={{
+                  color: "black",
+                }}
+              >
+                Ze
+              </span>
+              <span
+                style={{
+                  color: "red",
+                }}
+              >
+                Ball
+              </span>
+            </span>
+            .
           </p>
         </motion.div>
 
@@ -204,8 +224,8 @@ export default function HowToPlay() {
             className="inline-flex items-center justify-center
                        bg-[#175A38] text-[#F8FCEE] font-bold
                        px-8 py-4 rounded-full text-base
-                       hover:bg-green-800 hover:shadow-lg
-                       shadow-lg shadow-[#f5c518]/30
+                      
+                      
                        transition-all duration-300"
             style={{ fontFamily: "var(--font-poppins)" }}
           >

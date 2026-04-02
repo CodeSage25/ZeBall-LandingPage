@@ -18,7 +18,7 @@ const cashbackSteps = [
   },
   {
     icon: Coins,
-    title: "Crédit automatique",
+    title: "Crédité automatiquement",
     description: "Le cashback est crédité automatiquement sur votre solde.",
   },
 ];
@@ -80,14 +80,14 @@ export default function Cashback() {
             {/* CTA */}
             <div className="mt-8">
               <a
-                href="https://iziloto.cm/"
+                href="https://iziloto.cm/casino/games/dyce-games-zeball"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center
-                           bg-[#22c55e] text-[#1a1a2e] font-bold
+                           bg-[#175A38] text-[#FCFEF0] font-bold
                            px-8 py-4 rounded-full text-base
-                           hover:bg-green-700 hover:shadow-lg
-                           shadow-lg shadow-[#f5c518]/30
+                          
+                        
                            transition-all duration-300"
                 style={{ fontFamily: "var(--font-poppins)" }}
               >

@@ -1,6 +1,7 @@
 "use client";
 
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 const navigationLinks = [
   { label: "Jouer", href: "#jeu" },
@@ -34,7 +35,7 @@ export default function Footer() {
                   <span
                     style={{
                       color: "black",
-                      WebkitTextStroke: "1px white",
+                      WebkitTextStroke: "0.5px white",
                     }}
                   >
                     Ze
@@ -42,7 +43,7 @@ export default function Footer() {
                   <span
                     style={{
                       color: "red",
-                      WebkitTextStroke: "1px white",
+                      WebkitTextStroke: "0.5px white",
                     }}
                   >
                     Ball
@@ -63,9 +64,9 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2
-                         bg-[#22C45F] text-[#1a1a2e] font-bold
+                         bg-[#175A38] text-[#E5EFDF] font-bold
                          px-6 py-3 rounded-full text-sm
-                         hover:bg-yellow-400 hover:shadow-lg
+                        
                          transition-all duration-300"
               style={{ fontFamily: "var(--font-poppins)" }}
             >
@@ -150,6 +151,28 @@ export default function Footer() {
               </svg>
               Facebook IziLoto
             </a>
+            {/* Moyens de paiement */}
+            <div className="mt-8">
+              <p className="text-white/40 text-xs uppercase tracking-wider mb-3">
+                Moyens de paiement
+              </p>
+              <div className="flex items-center gap-4">
+                <Image
+                  src="/image_Mtn_momo.png"
+                  alt="MTN Mobile Money"
+                  width={80}
+                  height={32}
+                  className="h-8 w-auto opacity-70 hover:opacity-100 transition-opacity"
+                />
+                <Image
+                  src="/orange_money.png"
+                  alt="Orange Money"
+                  width={80}
+                  height={32}
+                  className="h-8 w-auto opacity-70 hover:opacity-100 transition-opacity"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
