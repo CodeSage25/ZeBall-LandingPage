@@ -5,8 +5,8 @@ import { useRef } from "react";
 import { CheckCircle2, AlertTriangle, Star, XCircle, Info } from "lucide-react";
 
 const generalRules = [
-  "La roue contient 8 boules (1 à 8) et 1 boule jaune spéciale.",
-  "Un tirage a lieu toutes les 20 secondes automatiquement.",
+  "La roue contient 8 cases (1 à 8) et 1 couleur jaune spéciale.",
+  "Un tirage a lieu toutes les 30 secondes automatiquement.",
   "Vous pouvez placer plusieurs mises sur différentes cases en même temps.",
   "Les gains sont crédités instantanément après chaque tirage.",
   "Les jetons disponibles vont de 10 FCFA à 10 000 FCFA.",

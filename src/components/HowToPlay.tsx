@@ -39,7 +39,7 @@ const steps = [
     number: 4,
     title: "Attendez le tirage",
     description:
-      "Le tirage a lieu toutes les 20 secondes. La roue tourne et la boule s'arrête !",
+      "Le tirage a lieu toutes les 30 secondes. La roue tourne et la boule s'arrête !",
     icon: Timer,
     color: "bg-orange-500",
   },

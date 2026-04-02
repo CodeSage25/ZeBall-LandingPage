@@ -45,7 +45,7 @@ const features = [
   },
   {
     icon: Clock,
-    title: "Tirage toutes les 20 secondes",
+    title: "Tirage toutes les 30 secondes",
     description:
       "Pas le temps de s'ennuyer. Un nouveau tirage démarre immédiatement.",
   },
